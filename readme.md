@@ -1,6 +1,8 @@
 # `Mortal-RPC`
 > Mortal-RPC, Set up your custom discord presence!
-
+# News
+- Buttons are coming soon!
+- We will start working on a gui app once we reach 50 downloads!
 ### How to run
 - Go to [releases](https://github.com/ItsBlackZlol/mortal-rpc/releases)
 - Download the latest release (zip)
