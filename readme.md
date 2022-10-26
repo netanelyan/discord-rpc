@@ -1,5 +1,9 @@
 # `Mortal-RPC`
-> Mortal-RPC, Set up your custom discord presence!
+> Want to customize your Discord Profile like so? ⬇️
+![](https://raw.githubusercontent.com/ItsBlackZlol/mortal-rpc/main/screenshots/2.png)
+> Check out our app ⬇️
+![](https://raw.githubusercontent.com/ItsBlackZlol/mortal-rpc/main/screenshots/1.png)
+
 # News
 - Buttons are coming soon!
 - We will start working on a gui app once we reach 50 downloads!
