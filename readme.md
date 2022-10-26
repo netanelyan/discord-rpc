@@ -1,5 +1,5 @@
 # `Mortal-RPC`
-- Want to customize your Discord Profile like so? ⬇️
+- Want to customize your Discord Profile like so? ⬇️ <br>
 ![](https://raw.githubusercontent.com/ItsBlackZlol/mortal-rpc/main/screenshots/2.png)
 - Check out our app ⬇️
 ![](https://raw.githubusercontent.com/ItsBlackZlol/mortal-rpc/main/screenshots/1.png)
