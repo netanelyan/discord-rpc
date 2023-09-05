@@ -3,33 +3,28 @@ from pypresence import *
 import pypresence
 
 print("""
-███╗░░░███╗░█████╗░██████╗░████████╗░█████╗░██╗░░░░░░░░░░░██████╗░██████╗░░█████╗░
-████╗░████║██╔══██╗██╔══██╗╚══██╔══╝██╔══██╗██║░░░░░░░░░░░██╔══██╗██╔══██╗██╔══██╗
-██╔████╔██║██║░░██║██████╔╝░░░██║░░░███████║██║░░░░░█████╗██████╔╝██████╔╝██║░░╚═╝
-██║╚██╔╝██║██║░░██║██╔══██╗░░░██║░░░██╔══██║██║░░░░░╚════╝██╔══██╗██╔═══╝░██║░░██╗
-██║░╚═╝░██║╚█████╔╝██║░░██║░░░██║░░░██║░░██║███████╗░░░░░░██║░░██║██║░░░░░╚█████╔╝
-╚═╝░░░░░╚═╝░╚════╝░╚═╝░░╚═╝░░░╚═╝░░░╚═╝░░╚═╝╚══════╝░░░░░░╚═╝░░╚═╝╚═╝░░░░░░╚════╝░
+██████╗░██╗░██████╗░█████╗░░█████╗░██████╗░██████╗░░░░░░░██████╗░██████╗░░█████╗░
+██╔══██╗██║██╔════╝██╔══██╗██╔══██╗██╔══██╗██╔══██╗░░░░░░██╔══██╗██╔══██╗██╔══██╗
+██║░░██║██║╚█████╗░██║░░╚═╝██║░░██║██████╔╝██║░░██║█████╗██████╔╝██████╔╝██║░░╚═╝
+██║░░██║██║░╚═══██╗██║░░██╗██║░░██║██╔══██╗██║░░██║╚════╝██╔══██╗██╔═══╝░██║░░██╗
+██████╔╝██║██████╔╝╚█████╔╝╚█████╔╝██║░░██║██████╔╝░░░░░░██║░░██║██║░░░░░╚█████╔╝
+╚═════╝░╚═╝╚═════╝░░╚════╝░░╚════╝░╚═╝░░╚═╝╚═════╝░░░░░░░╚═╝░░╚═╝╚═╝░░░░░░╚════╝░
 """)
 
 startup_info = open('data/startup.data')
 stratup_data = startup_info.read()
 
 if stratup_data == '0':
-    print("[*] Welcome to Mortal-RPC !")
-    print("[*] BUTTONS ARE COMING SOON!!!")
     print("[*] Source Code: https://github.com/ItsBlackZlol/mortal-rpc")
-    print("[*] Discord Server: https://discord.gg/UXxC2F4rVx")
-    print("[*] Tutorial: https://youtu.be/v_pX63UlWVw")
+    print("[*] Please follow these instructions - ")
 
-    print("\n[*] Let's set up your cool Discord presence, please follow the tutorial - ")
+    clientid = input("\n[1] Enter your application's client ID >>> ")
+    rpcstatus = input("[2] Enter your RPC status >>> ")
+    rpcdetails = input("[3] Enter your RPC details >>> ")
 
-    clientid = input("\n[1] Please enter your application's client ID >>> ")
-    rpcstatus = input("[2] Please enter your RPC status >>> ")
-    rpcdetails = input("[3] Please enter your RPC details >>> ")
-
-    largeiconpic = input("[3] Please enter your application's large icon's picture name >>> ")
-    largeicontext = input("[4] Please enter your application's large icon's name >>> ")
-    smalliconpic = input("[5] Please enter your application's small icon's picture name >>> ")
+    largeiconpic = input("[3] Enter your application's large icon's picture name >>> ")
+    largeicontext = input("[4] Enter your application's large icon's name >>> ")
+    smalliconpic = input("[5] Enter your application's small icon's picture name >>> ")
 
     with open('data/clientid.data', 'w') as f:
         f.writelines(clientid)
@@ -55,8 +50,6 @@ if stratup_data == '0':
 
 
 if stratup_data == '1':
-    print("[*] Welcome to Mortal-RPC !")
-    print("[*] BUTTONS ARE COMING SOON!!!")
     print("[*] Source Code: https://github.com/ItsBlackZlol/mortal-rpc")
     print("[*] Discord Server: https://discord.gg/UXxC2F4rVx")
     print("\n[1] Start your RPC status")
@@ -66,13 +59,13 @@ if stratup_data == '1':
     if editorstart == '1':
         pass
     if editorstart =='2':
-        clientid = input("\n[1] Please enter your application's client ID >>> ")
-        rpcstatus = input("[2] Please enter your RPC status >>> ")
-        rpcdetails = input("[3] Please enter your RPC details >>> ")
+        clientid = input("\n[1] Enter your application's client ID >>> ")
+        rpcstatus = input("[2] Enter your RPC status >>> ")
+        rpcdetails = input("[3] Enter your RPC details >>> ")
 
-        largeiconpic = input("[3] Please enter your application's large icon's picture name >>> ")
-        largeicontext = input("[4] Please enter your application's large icon's name >>> ")
-        smalliconpic = input("[5] Please enter your application's small icon's picture name >>> ")
+        largeiconpic = input("[3] Enter your application's large icon's picture name >>> ")
+        largeicontext = input("[4] Enter your application's large icon's name >>> ")
+        smalliconpic = input("[5] Enter your application's small icon's picture name >>> ")
 
         with open('data/clientid.data', 'w') as f:
             f.writelines(clientid)
@@ -115,4 +108,4 @@ RPC = Presence(clientid)
 RPC.connect()
 
 RPC.update(state=rpcstatus, details=rpcdetails, large_image=largeiconpic, small_image=smalliconpic, large_text=largeicontext, start=time.time())
-print("[*] RPC started! Check your Discord profile! ")
+print("[*] RPC is running! Check out your Discord profile!")
