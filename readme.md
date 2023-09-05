@@ -11,14 +11,11 @@
 ### How to set-up
 - Enter [Discord Developer Portal](https://discord.com/developers/applications)
 - Create a new application(top right)
-![](https://prnt.sc/zoOqCS8v7PIf)
 - Copy the app ID
-![](https://prnt.sc/dQWcGyg47qpg)
 - Run `main.py`
 - Paste the app ID
 - Enter RPC details
 - Return to Discord Devevloper Portal again and enter `Art Assets`
-![](https://prnt.sc/EeoEtIHtvpnm)
 - Add some images you will use in your RPC
 - Change their name to an easier one
 - Save
