@@ -15,7 +15,7 @@ startup_info = open('data/startup.data')
 stratup_data = startup_info.read()
 
 if stratup_data == '0':
-    print("[*] Source Code: https://github.com/ItsBlackZlol/mortal-rpc")
+    print("[*] Source Code: https://github.com/netanelyan/discord-rpc")
     print("[*] Please follow these instructions - ")
 
     clientid = input("\n[1] Enter your application's client ID >>> ")
@@ -50,8 +50,7 @@ if stratup_data == '0':
 
 
 if stratup_data == '1':
-    print("[*] Source Code: https://github.com/ItsBlackZlol/mortal-rpc")
-    print("[*] Discord Server: https://discord.gg/UXxC2F4rVx")
+    print("[*] Source Code: https://github.com/netanelyan/discord-rpc")
     print("\n[1] Start your RPC status")
     print("[2] Edit your RPC status")
     editorstart = input("[?]: ")
